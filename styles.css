@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+.btn-login{
+    padding: 10px 15px;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    
+    background-color: aqua;
+    color: black;
+}
+.bgo{
+    height: 100vh;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    z-index: -1;
+    background-color: rgba(0, 0, 0,0.5);
+    opacity: 0;
+    transition: 1s;
+
+}
+.showbgo{
+    opacity: 1;
+    z-index: 1;
+}
+.loginform{
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    transition: 2s;
+    left: 50%;
+    z-index: 9;
+    top: -50%;
+    box-shadow: 0px 0px 10px 3px #ccc;
+    transform: translate(-170px , -170px);
+}
+.showloginform{
+    top: 50%;
+}
+.loginform input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.loginform .Login{
+    background-color: cyan;
+    text-align: center;
+    box-shadow: 0 0 25px cyan, 0 0 25px cyan;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+}
+.Login:hover{
+    box-shadow:0 0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,
+    0 0 75px cyan,0 0 100px cyan ;
+}
+.loginform span{
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    color: aliceblue;
+    top: 0px;
+}

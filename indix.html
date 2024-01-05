@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>POPUP</title>
+    </head>
+    <body>
+
+        <button class="btn-login"  >Use me</button>
+        <div class="bgo"></div>
+
+        <div class="loginform">
+            <span>&times;</span>
+            <form action>
+                <div>
+                    <label for>Full Name</label>
+                    <input type="Name..." placeholder="Full Name Plz">
+                </div>
+                <div>
+                    <label for>Email</label>
+                    <input type="Email Address" placeholder="Email Plz">
+                </div>
+                <div>
+                    <label for>User Name</label>
+                    <input type="User Name"  placeholder="User Name Plz">
+                </div>
+                <div>
+                    <label for>Password</label>
+                    <input type="Password"  placeholder="Password Plz">
+                </div>
+                <div>
+                    <label for>Repeat Password</label>
+                    <input type="Repeat Password"  placeholder="Repeat Password Plz">
+                </div>
+                <button class="Login">Login</button>
+            </form>
+        </div>
+
+    </body>
+    <script>
+        function showModel(){
+            document.querySelector('.bgo').classList.add('showbgo');
+            document.querySelector('.loginform').classList.add('showloginform');
+
+        }
+        function closeModel(){
+            document.querySelector('.bgo').classList.remove('showbgo');
+            document.querySelector('.loginform').classList.remove('showloginform');
+
+        }
+        var btnlogin=document.querySelector(".btn-login");
+        btnlogin.addEventListener("click",showModel)
+
+        var c=document.querySelector("span");
+        c.addEventListener("click",closeModel)
+    </script>
+</html>
